@@ -8,7 +8,8 @@
 // REQUIRES: gpu
 // UNSUPPORTED: cuda || hip
 // UNSUPPORTED: esimd_emulator
-// Temporary disable everywhere until "Unsupported required sub group size" is fixed in some configurations.
+// Temporary disable everywhere until "Unsupported required sub group size" is
+// fixed in some configurations.
 // UNSUPPORTED: windows
 // UNSUPPORTED: linux
 // RUN: %clangxx -fsycl -fsycl-targets=spir64_gen -Xsycl-target-backend=spir64_gen "-device gen9" -o %t.sycl.out -DENABLE_SYCL=0 %s
